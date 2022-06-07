@@ -11,7 +11,7 @@ const NOUN_EVENTS = [
   },
   {
     id: 'e2',
-    title: 'nouns for introverts',
+    title: 'Nouns for introverts',
     description:
       'recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
     location: 'Dehavilland Street 5, 98765 New York',

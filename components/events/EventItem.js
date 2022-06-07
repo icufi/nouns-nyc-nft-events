@@ -1,4 +1,7 @@
 import Link from 'next/link'
+
+import classes from './EventItem.module.css'
+
 const EventItem = (props) => {
     const { title, image, date, location, id } = props;
 
@@ -11,7 +14,7 @@ const EventItem = (props) => {
     const directoryLink = `/events/${id}`;
 
   return (
-    <li>
+    <li className={classes.item}>
       <img src={'/' + image} alt={title} />
       <div>
         <div>
