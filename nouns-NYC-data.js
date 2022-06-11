@@ -3,7 +3,7 @@ const NOUN_EVENTS = [
     id: 'e1',
     title: 'Nouns for everyone',
     description:
-      'Everyone can learn to code! Yes, everyone! In this live event, we are going to go through all the key basics and get you started with programming as make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in well.',
+      'Ugh brunch tilde, +1 kale chips pickled chartreuse swag mixtape iPhone venmo 90s pork belly humblebrag biodiesel. Tacos enamel pin dreamcatcher deep v meditation blue bottle. Jean shorts hella coloring book, tonx',
     location: 'Bleeker Street 25, 12345 Manhattan',
     date: '2021-05-12',
     image: 'images/1.jpg',
@@ -13,7 +13,7 @@ const NOUN_EVENTS = [
     id: 'e2',
     title: 'Nouns for introverts',
     description:
-      'recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+      'YOLO offal celiac ramps pok pok. Chillwave copper mug readymade enamel pin, beard microdosing before they sold out thundercats schlitz hella. Health goth listicle blue bottle heirloom freegan salvia fashion axe pinterest next level hoodie iPhone single-origin coffee DSA godard cloud bread. Enamel pin mixtape meditation, kinfolk tbh',
     location: 'Dehavilland Street 5, 98765 New York',
     date: '2021-05-30',
     image: 'images/2.png',
@@ -23,7 +23,7 @@ const NOUN_EVENTS = [
     id: 'e3',
     title: 'Nouns for extroverts',
     description:
-      'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,',
+      'Copper mug poutine flannel mumblecore, vape waistcoat austin activated charcoal lomo edison bulb. Pickled stumptown narwhal, sriracha selvage vinyl normcore kitsch.',
     location: 'Mott Street 12, 10115 Brooklyn City',
     date: '2022-04-10',
     image: 'images/3.png',
