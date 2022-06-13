@@ -9,8 +9,6 @@ import classes from './EventItem.module.css';
 const EventItem = (props) => {
   const { title, image, date, location, id } = props;
 
-  console.log(props);
-
   const readableDate = new Date(date).toLocaleDateString('en-US', {
     day: 'numeric',
     month: 'long',

@@ -5,7 +5,7 @@ const NOUN_EVENTS = [
     description:
       'Ugh brunch tilde, +1 kale chips pickled chartreuse swag mixtape iPhone venmo 90s pork belly humblebrag biodiesel. Tacos enamel pin dreamcatcher deep v meditation blue bottle. Jean shorts hella coloring book, tonx',
     location: 'Bleeker Street 25, 12345 Manhattan',
-    date: '2021-05-12',
+    date: '2022-05-12',
     image: 'images/1.jpg',
     isFeatured: false,
   },
@@ -15,7 +15,7 @@ const NOUN_EVENTS = [
     description:
       'YOLO offal celiac ramps pok pok. Chillwave copper mug readymade enamel pin, beard microdosing before they sold out thundercats schlitz hella. Health goth listicle blue bottle heirloom freegan salvia fashion axe pinterest next level hoodie iPhone single-origin coffee DSA godard cloud bread. Enamel pin mixtape meditation, kinfolk tbh',
     location: 'Dehavilland Street 5, 98765 New York',
-    date: '2021-05-30',
+    date: '2022-05-30',
     image: 'images/2.png',
     isFeatured: true,
   },
