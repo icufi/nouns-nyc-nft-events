@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 import { getFilteredEvents } from '../../nouns-NYC-data';
 import EventList from '../../components/events/EventList';
@@ -62,6 +63,10 @@ const FilteredEvents = () => {
 
   return (
     <Fragment>
+      <Head>
+        <title>Filtered Nounders Events</title>
+        <meta name='description' content="Your selection for your favorite event." />
+      </Head>
       <ResultsTitle date={date} />
       <EventList items={filteredEvents} />
     </Fragment>
