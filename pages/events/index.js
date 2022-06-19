@@ -1,18 +1,18 @@
 import { Fragment } from 'react';
-import {useRouter} from 'next/router'
+import { useRouter } from 'next/router';
 
-import { getAllEvents } from '../../nouns-NYC-data';
+import { getAllEvents } from '../../helpers/api-utils';
 import EventList from '../../components/events/EventList';
 import EventsSearch from '../../components/events/events-search';
 
-const AllEvents = () => {
+const AllEvents = (props) => {
   const router = useRouter();
-  const events = getAllEvents();
+  const { events } = props;
 
   const findEventsHandler = (year, month) => {
-    const fullPath = `/events/${year}/${month}`
-router.push(fullPath);
-  }
+    const fullPath = `/events/${year}/${month}`;
+    router.push(fullPath);
+  };
 
   return (
     <Fragment>
@@ -21,5 +21,14 @@ router.push(fullPath);
     </Fragment>
   );
 };
+
+export async function getStaticProps() {
+  const events = await getAllEvents();
+
+  return {
+    props: { events: events },
+    revalidate: 60
+  };
+}
 
 export default AllEvents;
