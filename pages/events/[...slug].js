@@ -12,6 +12,16 @@ const FilteredEvents = () => {
   const router = useRouter();
   const filterData = router.query.slug;
 
+  const pageHeadData = (
+    <Head>
+      <title>Filtered Nounders Events</title>
+      <meta
+        name='description'
+        content='Your selection for your favorite event.'
+      />
+    </Head>
+  );
+
   if (!filterData) {
     return <p className='center'>Loading...</p>;
   }
@@ -32,6 +42,7 @@ const FilteredEvents = () => {
   ) {
     return (
       <Fragment>
+        {pageHeadData}
         <ErrorAlert>
           <p>Invalid Filter. Please adjust merch values.</p>
         </ErrorAlert>
@@ -51,6 +62,7 @@ const FilteredEvents = () => {
   if (!filteredEvents || filteredEvents.length === 0) {
     return (
       <Fragment>
+        {pageHeadData}
         <p>No Noun events found.</p>
         <div className='center'>
           <Button link='/events'>Show All Events</Button>
@@ -63,10 +75,7 @@ const FilteredEvents = () => {
 
   return (
     <Fragment>
-      <Head>
-        <title>Filtered Nounders Events</title>
-        <meta name='description' content="Your selection for your favorite event." />
-      </Head>
+      {pageHeadData}
       <ResultsTitle date={date} />
       <EventList items={filteredEvents} />
     </Fragment>
